@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D3.js y Three.js Interactivo</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    #info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 24px;
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 5px;
+      max-width: 300px;
+      line-height: 1.5;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+  <div id="info"><font color="red">
+      D3.js:
+      <font color="blue">
+      Facilita la manipulación
+      y escalado de datos. Cuando
+      se combina con Three.js, &nbsp;permite
+      crear visualizaciones&nbsp; 3D&nbsp; muy
+      complejas de manera&nbsp; eficiente
+      y&nbsp; modular, mejorando&nbsp; mucho la
+      experiencia del usuario.<br><br><b>
+      <font color="red">
+      Gira&nbsp; gráfico&nbsp; con el ratón<br><br>
+      Clic en cualquier lugar de <br>
+      la ventana cambia valores
+  </div>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
